@@ -51,17 +51,17 @@ $router->get('/logout', function($request) {
     $c->logout();
 });
 
-$router->post('/done', function($request) use ($app) {
+$router->post('/done', function($request) {
     $c = new CalendController($request);
     $c->done();
 });
 
-$router->post('/distribute', function($request) use ($app) {
+$router->post('/distribute', function($request) {
     $c = new CalendController($request);
     $c->distribute();
 });
 
-$router->post('/upload', function($request) use ($app) {
+$router->post('/upload', function($request) {
     $c = new CalendController($request);
     $c->upload();
 });
