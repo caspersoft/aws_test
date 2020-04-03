@@ -1,0 +1,19 @@
+{
+    "name": "casper/aws_test",
+    "autoload": {
+        "psr-4": {
+            "Router\\":"src/Libs/Router",
+            "App\\": ["src", "src/Config", "src/Controllers", "src/Libs", "src/Models"]
+        },
+        "files": [
+            "src/Config/config.db.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Maxim Kovalevsky",
+            "email": "caspermax@gmail.com"
+        }
+    ],
+    "require": {}
+}
